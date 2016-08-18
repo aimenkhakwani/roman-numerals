@@ -1,8 +1,13 @@
-#p1 {
-  color: red;
+body {
+  text-align: center;
 }
 
-#button {
-  margin-left: 45%;
-  margin-top: 20%;
+.btn {
+  margin-bottom: 2rem;
+}
+
+.well {
+  display: none;
+  width: 60%;
+  margin: 0 auto;
 }

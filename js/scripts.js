@@ -25,10 +25,9 @@ function betweenDigits(partOfSteve, one, five, ten){
 function numberConvert(steve) {
   var fiveTens = ["1", "5", "10", "50", "100", "500", "1000"];
   var romanSymbols = ["I", "V", "X", "L", "C", "D", "M"];
-  if(steve === "0"){
-    return steve;
+  if(parseInt(steve) < 1){
+    return "What are you doing way down there!";
   }
-
   else if (parseInt(steve) > 3999) {
     return "Get down from your high horse lol";
   }
@@ -68,6 +67,6 @@ $(document).ready(function(){
     event.preventDefault();
     var userInput = $("input#input").val();
     var result = numberConvert(userInput)
-    $("#result").text(result);
+    $("#result").text(result).show();
   });
 });
