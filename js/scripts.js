@@ -1,6 +1,5 @@
 //<!-- Back End -->
 function betweenDigits(partOfSteve, one, five, ten){
-  console.log("this is partOfSTeve" + partOfSteve);
   if(partOfSteve === 4 || partOfSteve === 9){
     var endNum = five;
     if(partOfSteve === 9){
