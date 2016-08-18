@@ -15,8 +15,12 @@ function numberConvert(steve) {
     //more efficient way with indexOf (for future reference)
     //return romanSymbols[fiveTens.indexOf(steve)];
   }
-  else if(steve === "4"){
-    return "IV";
+  else if(steve === "4" || steve === "9"){
+    var endNum = "V"
+    if(steve ==="9"){
+      endNum = "X"
+    }
+    return "I" + endNum;
   }
   else if(parseInt(steve) < 9){
     var romNum = "I";
