@@ -2,6 +2,8 @@
  function numberConvert(steve) {
    if(steve === "0"){
      return steve;
+   } else if (parseInt(steve) > 3999) {
+     return "Get down from your high horse lol";
    }
  }
 

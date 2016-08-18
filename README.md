@@ -16,7 +16,7 @@ On an input of 0, program simply returns 0:
 
 Program ignores numbers higher than 3,999:
 * Expected Input: 4000
-* Expected Output: 4000
+* Expected Output: Error message
 
 On an input of 1, 5, 10, 50, 100, 500, 1,000, program returns the roman numeral equivalent:
 * Expected Input: 1
