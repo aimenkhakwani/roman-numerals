@@ -1,7 +1,6 @@
 //<!-- Back End -->
 function betweenDigits(partOfSteve, one, five, ten){
-  //console.log("this is partOfSTeve" + partOfSteve);
-  // partOfSteve = 6, one = X, five = L, ten = C
+  console.log("this is partOfSTeve" + partOfSteve);
   if(partOfSteve === 4 || partOfSteve === 9){
     var endNum = five;
     if(partOfSteve === 9){
@@ -46,22 +45,22 @@ function numberConvert(steve) {
 
   else {
     steveArray = steve.split("").reverse();
+    var concatRoman = "";
     for(var i = 0; i < steveArray.length; i++){
       var stevePart = parseInt(steveArray[i]);
       if(stevePart !== 0){
-        if(i === 0){
-          return betweenDigits(stevePart, romanSymbols[0], romanSymbols[1], romanSymbols[2]);
-        } else if (i === 1){
-          return betweenDigits(stevePart, romanSymbols[2], romanSymbols[3], romanSymbols[4]);
-        } else if (i === 2){
-          return betweenDigits(stevePart, romanSymbols[4], romanSymbols[5], romanSymbols[6]);
-        } else {
-          return betweenDigits(stevePart, romanSymbols[6], "", "");
+        if(i < 3 ){
+          concatRoman = betweenDigits(stevePart, romanSymbols[i*2], romanSymbols[i*2+1], romanSymbols[i*2+2]) + concatRoman;
+        }
+        else {
+          concatRoman = betweenDigits(stevePart, romanSymbols[6], "", "") + concatRoman;
         }
       } //end stevePart !== 0
-    } //end for loop
+    }
+    return concatRoman;//end for loop
   } //end else
 } //end function
+
 
 //<!-- Front End  -->
 $(document).ready(function(){
