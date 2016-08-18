@@ -51,10 +51,6 @@ Program concatenates digits together:
 * _Copy the repository from GitHub_
 * _Open the index.html file a browser of your choice_
 
-## GitHub link
-
-https://github.com/ewajm/Template
-
 ## Licensing
 
 * MIT
