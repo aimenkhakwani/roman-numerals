@@ -20,6 +20,8 @@ function numberConvert(steve) {
       romNum += "I";
     }
     return romNum;
+  } else if(steve === "4"){
+    return "IV";
   }
 }
 
