@@ -19,8 +19,8 @@ Program ignores numbers higher than 3,999:
 * Expected Output: Error message
 
 On an input of 1, 5, 10, 50, 100, 500, 1,000, program returns the roman numeral equivalent:
-* Expected Input: 1
-* Expected Output: I
+* Expected Input: 100
+* Expected Output: C
 
 On an input of 2-3, program concatenates the 1 symbol until it hits the target number
 * Expected Input: 2
